@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная - Elka Club</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="">
+        <div class="wrapper">
+            <div class="header">
+                <a href="index.html"><img src="img/logo.svg" alt=""></a>
+                <button class="burger_menu">
+                    <img src="img/burger.svg" alt="">
+                </button>
+            </div>
+        </div>
+    </header>
+    <div class="burger_menu_content">
+        <div class="burger_header">
+            <a href="index.html"><img src="img/logo_circle.svg" alt=""></a>
+            <div class="button_burger">
+                <button class="filter">
+                    <img src="img/search.svg" alt="">
+                </button>
+                <button class="close_burger">
+                    <img src="img/close_burger.svg" alt="">
+                </button>
+            </div>
+        </div>
+        <ul>
+            <li><a class="add_link" href="#">Подать объявление</a></li>
+            <li><a href="lk.html">Аккаунт</a></li>
+            <li><a href="#">Мои объявления</a></li>
+            <li><a href="#">Настройки</a></li>
+            <li><a href="#">Тех.поддержка</a></li>
+            <li><a href="#">Выход</a></li>
+        </ul>
+    </div>
+    <section class="height_section" id="lk">
+        <div class="wrapper">
+            <div class="lk">
+                <form class="lk_edit">
+                    <div class="avatar_edit">
+                        <div class="user_img">
+                            <img src="" alt="">
+                        </div>
+                        <button class="btn_edit_avatar">установить фото профиля</button>
+                    </div>
+                    <div class="user_title">
+                        <input type="text" name="name" placeholder="Ваше имя">
+                        <input type="text" name="about" placeholder="О себе">
+                    </div>
+                    <div class="user_social_edit">
+                        <p>Ниже можете указать контакты, которые будут видны остальным и по которым с Вами смогут связаться:</p>
+                        <input type="text" name="phone" placeholder="Номер телефона">
+                        <input type="email" name="email" placeholder="Ваш email">
+                        <input type="text" name="telegram" placeholder="Ваш Telegram">
+                        <input type="text" name="instagram" placeholder="Ваш Instagram">
+                        <input type="text" name="facebook" placeholder="Ваш Facebook">
+                        <input type="text" name="tiktok" placeholder="Ваш TikTok">
+                    </div>
+                    <button class="save_btn">Сохранить</button>
+                </form>
+
+            </div>
+        </div>
+    </section>
+
+
+    <script src="js/header_index.js"></script>
+    <script src="js/burger.js"></script>
+</body>
+
+</html>
