@@ -433,3 +433,219 @@ header {
     color: #339CC3;
     margin-top: 10px;
 }
+
+.burger_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 50px;
+    padding: 0 10px;
+    border-bottom: 2px solid #E5E4E4;
+}
+
+.button_burger {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.burger_menu_content {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: top 0.3s ease-in-out;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 9999;
+}
+
+.burger_menu_content ul {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px 0 30px;
+}
+
+.burger_menu_content ul li {}
+
+.burger_menu_content ul li a {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    /* identical to box height */
+    color: #000000;
+}
+
+.burger_menu_content ul li .add_link {
+    font-weight: 700;
+    line-height: 24px;
+    color: #256E8A;
+}
+
+.burger_menu_content.active {
+    top: 0px;
+    /* высота меню header */
+}
+
+
+/* Активное состояние меню */
+
+.burger_menu_content.active {
+    right: 0;
+}
+
+
+/* Запрет прокрутки */
+
+body.no-scroll {
+    overflow: hidden;
+}
+
+.burger_menu_overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    z-index: 999;
+}
+
+
+/* Активное состояние overlay */
+
+.burger_menu_overlay.active {
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 1;
+    visibility: visible;
+}
+
+.lk {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.user_img {
+    width: 76px;
+    height: 76px;
+    border-radius: 50%;
+    background: #8C8C8C;
+    border: 3px solid #24C9FA;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+
+.user_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.user_title {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 40px;
+}
+
+.user_name {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+    color: #000000;
+}
+
+.user_info {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #00394A;
+}
+
+.user_social h4 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+    color: #000000;
+    margin-bottom: 15px;
+}
+
+.user_social ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.user_social ul li {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.user_social ul li img {
+    width: 20px;
+    height: 20px;
+}
+
+.user_social ul li a {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    /* identical to box height */
+    color: #494949;
+}
+
+.bottom_content_lk {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    margin-top: 50px;
+}
+
+.bottom_content_lk a {
+    height: 40px;
+    background: #24C9FA;
+    border-radius: 100px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    /* identical to box height */
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    padding: 0 20px;
+    width: 100%;
+    max-width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

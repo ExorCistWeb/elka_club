@@ -3,17 +3,25 @@ document.addEventListener('DOMContentLoaded', function() {
     const btnSwipe = document.querySelector('.btn_swipe');
     const headerMain = document.querySelector('.header_main');
 
+    let isSwipeHeaderVisible = true; // Флаг для отслеживания состояния swipeHeader
+
     // Функция для скрытия блока с плавным исчезновением
     function hideSwipeHeader() {
+        if (!isSwipeHeaderVisible) return; // Предотвращение повторного запуска
+        isSwipeHeaderVisible = false;
+
         swipeHeader.style.transition = 'transform 0.6s ease-out';
         swipeHeader.style.transform = 'translateY(-100%)';
         setTimeout(() => {
             swipeHeader.style.display = 'none';
-        }, 300); // Устанавливаем display none после анимации
+        }, 600); // Устанавливаем display none после завершения анимации
     }
 
     // Функция для отображения блока с плавным появлением
     function showSwipeHeader() {
+        if (isSwipeHeaderVisible) return; // Предотвращение повторного запуска
+        isSwipeHeaderVisible = true;
+
         swipeHeader.style.display = 'flex';
         swipeHeader.style.transform = 'translateY(-100%)'; // Начальное положение
         setTimeout(() => {
