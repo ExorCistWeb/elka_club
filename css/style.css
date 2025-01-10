@@ -26,6 +26,10 @@
     text-decoration: none;
 }
 
+button {
+    cursor: pointer;
+}
+
 body {
     width: 100%;
     background: #F5F5F5;
